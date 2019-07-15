@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "eb3b6712-7004-4e80-99aa-0189613df7fe",
+		"name": "Queries",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Accounts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\" : \"{accounts(type : Checking){number,blocked,personId, openingDate}}\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/accounts",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
